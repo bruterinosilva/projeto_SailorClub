@@ -1,26 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Exo 2", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
 }
 
 .container {
   width: 80%;
   margin: auto;
+  display: flex;
 }
 
 .header {
-  color: #32b9cd;
   border-bottom: 3px solid #32b9cd;
-  /* border: 3px solid yellow; */
 }
 
 .header .container {
-  display: flex;
   justify-content: space-between;
-  /* border: 3px solid pink; */
 }
 
 .header a {
@@ -33,43 +31,48 @@ body {
 }
 
 .navbar {
-  width: 600px;
+  width: 300px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   color: #e3b062;
-  /* border: 3px solid green; */
 }
+
+
+.titulo {
+  color: #32b9cd;
+  width: fit-content;
+  font-weight: 500;
+}
+
 
 /* BANNER */
 
 .banner {
-  height: 500px;
+  height: fit-content;
+  padding: 40px 0;
   color: white;
-  /* border: 3px solid yellow; */
   background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
   background-size: cover;
 }
 
 .banner .container {
-  /* border: 3px solid green; */
-  height: 500px;
-  display: flex;
+  height: 400px;
+  font-size: 36px;
+  justify-content: center;
   align-items: center;
 }
 
 .banner p {
-  /* border: 3px solid cyan; */
   width: 50%;
   margin: 0;
   padding: 0;
   width: 280px;
   font-size: 36px;
-  margin-left: 350px;
 }
 
-.banner span {
+.banner .container span {
   font-weight: 800;
 }
 
@@ -77,125 +80,79 @@ body {
 
 .social {
   background-color: #e5e5e5;
-  /* border: 3px solid yellowgreen; */
-  padding: 50px 0;
+  display: flex;
 }
 
-.social .container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  /* border: 3px solid blue; */
+.box img {
+  width: 170px;
 }
 
-/* usar este bloco para explicar margin e padding*/
-.social .titulo {
-  /* border: 3px solid pink; */
+.social .container .boxes {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
-.social h2 {
-  display: flex;
-  padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  align-self: center;
-  justify-self: center;
+.social p {
   text-align: center;
-  color: #e6005a;
-  margin: 0;
-  /* border: 3px solid orange; */
 }
 
-.social .boxes {
+.box {
+  margin: 10px;
   display: flex;
-  /* border: 3px solid blue; */
-}
-
-.social .box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  width: 33%;
-  /* border: 3px solid yellow; */
+  align-items: center;
 }
 
-.social .box img {
-  width: 150px;
-  align-self: center;
+
+.box {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.social .box h4 {
-  color: #e6005a;
-  margin-top: 30px;
-}
 
 /* FOOTER */
 
 .footer {
   background-color: #32b9cd;
   height: 150px;
-  color: white;
-  margin: 0;
-  padding: 0;
+  color: #fff;
   display: flex;
-  justify-content: center;
+  font-size: 15px;
 }
 
 .footer .container {
-  display: flex;
   justify-content: center;
 }
 
-h4 {
-  margin: 0;
-  padding: 0;
-}
 
 /* LOGIN */
 
-.banner-login {
-  color: white;
-  height: 550px;
-  /* border: 3px solid yellow; */
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-  background-size: cover;
-}
-
-.banner-login .container {
-  height: 550px;
-  /* border: 3px solid green; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner-login {
-  color: #e6005a;
-}
-
-.banner-login .card {
+.banner .container .card {
   background-color: #e5e5e5;
-  height: 450px;
+  height: fit-content;
   width: 400px;
   display: flex;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  color: palevioletred;
+  align-items: center;
+  border-radius: 4px;
 }
 
-.banner-login a {
-  color: white;
-  text-decoration: none;
+.card {
+  display: flex;
+  justify-content: space-around;
 }
 
-.banner-login #div_erros_login {
+.card h2 {
+  font-size: 30px;
+}
+
+.card h4 {
+  font-size: 16px;
+}
+
+.banner #div_erros_login {
   margin-top: 15px;
 }
 
@@ -205,14 +162,48 @@ button {
 
 /* FORMULARIO */
 
+.alerta_erro{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_erro {
+  display: none;
+  background-color: #fff;
+  color: black;
+  width: 230px;
+  position: fixed;
+  border-radius: 4px;
+  border: #e6005a 3px solid;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.card_erro #mensagem_erro{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.formulario .tipo_campo {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
-  height: 30px;
-  border: 2px solid #e6005a;
+  margin-bottom: 10px;
+  border: 2px solid #32b9cd;
+  padding: 10px;
+  text-align: center;
   border-radius: 10px;
 }
 
 .btn {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Barlow", sans-serif;
   border: 0;
   border-radius: 5px;
   font-weight: 600;
@@ -222,16 +213,11 @@ input {
   background-color: #e6005a;
   width: 120px;
   align-self: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
+  margin-top: 5px;
 }
 
 .loading-div {
   width: 50px;
-  /* border: 3px solid pink; */
   margin: auto;
   display: none;
 }
@@ -246,7 +232,6 @@ form {
 .janela {
   display: flex;
   width: 100vw;
-  /* height: 100vh; */
 }
 
 .header-left a {
@@ -346,4 +331,9 @@ form {
 /* pagina extra - simulador */
 .simulador {
   color: white;
+
+}
+
+.simulador .container {
+  flex-direction: column
 }

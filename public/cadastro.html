@@ -25,7 +25,7 @@
     <!--header inicio-->
     <div class="header">
         <div class="container">
-            <h1>AcquaTec</h1>
+            <h1 class="titulo">AcquaTec</h1>
             <ul class="navbar">
                 <li>
                     <a href="./index.html">
@@ -47,34 +47,32 @@
     </div>
     <!--header fim-->
 
-    <div class="banner-login ">
+
+    <div class="banner ">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
         <div class="container ">
             <div class="card medio">
                 <h2>Bem-vindo!</h2>
                 <div class="formulario">
-                    <div id="form_cadastro">
-                        Nome:
-                        <br>
-                        <input id="nome_input" type="text" placeholder="Ada Lovelace">
-                        <br>
-                        <br>
-                        E-mail:
-                        <br>
-                        <input id="email_input" type="text" placeholder="meuemail@provedor.com">
-                        <br>
-                        <br>
-                        Senha:
-                        <br>
-                        <input id="senha_input" type="password" placeholder="******">
-                        <br>
-                        <br>
-                        Confirmação da Senha:
-                        <br>
-                        <input id="confirmacao_senha_input" type="password" placeholder="******">
-                        <br>
-                        <br>
-                        <button class="btn" onclick="cadastrar()">Cadastrar</button>
-                    </div>
+
+                    <span class="tipo_campo">Nome:</span>
+                    <input id="nome_input" type="text" placeholder="Seu nome">
+
+                    <span class="tipo_campo">E-mail:</span>
+                    <input id="email_input" type="text" placeholder="meuemail@provedor.com">
+
+                    <span class="tipo_campo">Senha:</span>
+                    <input id="senha_input" type="password" placeholder="******">
+
+                    <span class="tipo_campo">Confirmação da Senha:</span>
+                    <input id="confirmacao_senha_input" type="password" placeholder="******">
+
+                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
+
                 </div>
                 <div id="div_aguardar" class="loading-div">
                     <img src="./assets/circle-loading.gif" id="loading-gif">
@@ -90,7 +88,7 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com amor por um aluno BandTec &copy; 2021</h4>
+            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
         </div>
     </div>
     <!--footer fim-->
@@ -101,7 +99,6 @@
 </html>
 
 <script>
-
     function cadastrar() {
         aguardar();
 
@@ -111,35 +108,36 @@
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 
-            window.alert("Preencha todos os campos para prosseguir!");
-            if (nomeVar == "") {
-                console.log('nome está em branco')
-            }
-            if (emailVar == "") {
-                console.log('email está em branco')
-            }
-            if (senhaVar == "") {
-                console.log('senha está em branco')
-            }
-            if (confirmacaoSenhaVar == "") {
-                console.log('confirmacaoSenha está em branco')
-            }
             finalizarAguardar();
             return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
         }
 
         if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
-            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Ops, e-mail inválido! Verifique e tente novamente.";
             finalizarAguardar();
             return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
         }
 
         if (senhaVar != confirmacaoSenhaVar) {
-            window.alert("As senhas inseridas devem ser iguais para prosseguir!");
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "As senhas inseridas devem ser iguais para prosseguir!";
             finalizarAguardar();
             return false;
         }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
 
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -156,7 +154,8 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                window.alert("Cadastro realizado com sucesso!");
+                cardErro.style.display = "block"
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso!";
                 window.location = "login.html";
                 limparFormulario();
                 finalizarAguardar();
@@ -169,6 +168,10 @@
         });
 
         return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
     }
 
 </script>
