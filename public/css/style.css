@@ -64,6 +64,10 @@ body {
   align-items: center;
 }
 
+.tamanho-conteudo { 
+  height: fit-content !important;
+}
+
 .banner p {
   width: 50%;
   margin: 0;
@@ -81,6 +85,10 @@ body {
 .social {
   background-color: #e5e5e5;
   display: flex;
+}
+
+.social .container{
+  justify-content: center;
 }
 
 .box img {
