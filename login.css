@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-size: 30px;
+    text-align:justify;
+    color:#8f85b9;
+}
+
+.box_login {
+    padding: 0 20px;
+    background-color: #d260ff56;
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    margin-top: 150px;
+    margin-left: 100px;
+    border: 6px #d260ff56;
+    border-radius: 15px;
+    
+}
+
+.img_login img {
+    height: 683px;
+    padding: 0 0px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.div_login {
+    display: flex;
+    margin-left: 6px;
+}
+
+.box_inputs {
+    color: #8f85b9;
+    height: 60px;
+    width: 314px;
+    margin-top: 50px;
+    margin-left: 74px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 314px;
+}
+
+form label {
+    margin-top: 3px;
+}
+
+form input {
+    margin-top: 2px;
+    outline: none;
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid #ffc9dc36;
+    justify-content: space-between;
+}
+
+form button {
+    margin-top: 16px;
+    background-color: #ff2e51;
+    color: white;
+    padding: 10px 15px;
+    width: 400px;
+    align-self: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+}
