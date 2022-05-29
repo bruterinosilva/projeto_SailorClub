@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0; 
+    outline: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+.banner {
+    width: 100%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-bottom: 4px groove#ffa4c1;
+}
+
+.box_index {
+    background: #d260ff56;
+    width: 800px;
+    border: 6px #d260ff56;
+    border-radius: 15px;
+}
+
+.saibamais_btn {
+    background-color: #8f85b9;
+    height: 25px;
+    width: 500px;
+    border: #8f85b9 solid 10px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 420px;
+    margin-left: 415px;
+    color: white;
+    padding: 4px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    animation: bounce infinite linear 3s;
+}
+
+.saibamais_btn:hover {
+    transform: translateZ(-10px);
+    box-shadow: 0px 5px 5px 0px #8f85b9;
+    background: #ff2e51;
+    border: #ff2e51 solid 10px;
+    border-radius: 25px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFDCE7;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        top: 20px
+    }
+
+    50% {
+        top: 40px
+    }
+
+    100% {
+        top: 20px
+    }
+}
+
+#banner2 {
+    display: flex;
+    background-image: url("../img/background_site.png");
+    height: 900px;
+    width: 100%;
+    margin-bottom: -31px;
+}
+
+.funcoes {
+    display: flex;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 50px;
+}
+
+.memoria {
+    padding: 0 20px;
+    background-color: #d260ff56;
+    margin-right: 30px;
+    border: 6px #d260ff56;
+    border-radius: 25px;
+    height: 500px;
+    transition: 0.5s;
+}
+
+.quiz {
+    padding: 0 20px;
+    background-color: #d260ff56;
+    margin-right: 30px;
+    border: 6px #d260ff56;
+    border-radius:25px;
+    transition: 0.5s;
+}
+
+
+.cadastro {
+    padding: 0 20px;
+    background-color: #d260ff56;
+    margin-right: 30px;
+    border: 6px #d260ff56;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.memoria img {
+    height: 200px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 20px 0px;
+}
+
+.quiz img {
+    height: 200px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 20px 0px;
+}
+
+.cadastro img {
+    height: 200px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 20px 0px;
+}
+    
+    
+.memoria h3 {
+    font-size: 30px;
+    color: #8f85b9;
+    font-weight: lighter;
+    margin-left: 32px;
+    padding: 20px 20px;
+}
+
+.quiz h3 {
+    font-size: 30px;
+    color: #8f85b9;
+    font-weight: lighter;
+    margin-left: 120px;
+    padding: 20px 20px;
+}
+
+.cadastro h3 {
+    font-size: 30px;
+    color: #8f85b9;
+    font-weight: lighter;
+    margin-left: 70px;
+    padding: 20px 20px;
+}
+
+.memoria p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 25px;
+    padding: 10px 20px;
+    width: 264px;
+}
+
+.quiz p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 35px;
+    padding: 10px 20px;
+    width: 252px;
+}
+
+.cadastro p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 40px;
+    padding: 10px 20px;
+    width: 242px;
+}
+
+.memoria:hover {
+    box-shadow: 0px 10px 10px 0px #ff2e51;
+    background: #d260ff56;
+    border-radius: 25px;
+}
+
+.quiz:hover {
+    box-shadow: 0px 10px 10px 0px #ff2e51;
+    background: #d260ff56;
+    border-radius: 25px;
+}
+
+.cadastro:hover {
+    box-shadow: 0px 10px 10px 0px #ff2e51;
+    background: #d260ff56;
+    border-radius: 25px;
+}

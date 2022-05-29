@@ -7,12 +7,12 @@
 
 header {
     /* background: linear-gradient(90deg, rgba(238,210,156,1) 1%, rgba(255,201,220,1) 29%, rgba(239,133,136,1) 84%); */
-    background-color: #f7c3ea;
+    background-color: #ffa4c1;
     padding: 4px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 4px groove #eed29c;
+    border-bottom: 4px groove #ffa4c1;
     
 }
 
@@ -35,7 +35,7 @@ header {
 
 .navbar_btn {
     text-decoration: none;
-    color: #8f85b9;
+    color: #FFFFFF;
     transition: 0.5s;
 }
 
@@ -45,7 +45,7 @@ header {
 }
 
 .login_btn {
-    background: #8f85b9;
+    background: #ff2e51;;
     border-radius: 28px;
     color: white;
     padding: 5px 10px;
@@ -65,4 +65,20 @@ header {
 
 .agora_login {
     background-color: #ff2e51;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFDCE7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F686DD;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dd79c7;
 }

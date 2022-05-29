@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Sailor Club</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +15,9 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="./img/logo.png">
-        </div>
+        <a class="logo" href="index.html">
+            <img src="./assets/img/logo.png">
+        </a>
 
         <ul class="navbar">
             <li><a class="navbar_btn agora" href="index.html">Início</a></li>
@@ -31,15 +31,45 @@
     </header>
 
     <div class="banner">
-        <img src="./img/banner_index.png">
+        <div class="imagem">
+            <img src="./assets/img/f7c3ea.png">
+        </div>
+        <a class="saibamais_btn" href="#banner2">Conheça o Club</a>
     </div>
 
-    <div class="saudacao">
-        <h3>Seja bem-vindo!</h3>
+    <div id="banner2">
+        <div class="funcoes">
+            <div class="memoria">
+                <img src="./assets/img/game-1.png">
+                <h3>Jogo da memória</h3>
+                <p>Uma guerreira precisa de uma boa memória,
+                    que tal treinar a sua com um jogo super fofo?</p>
+            </div>
+        
+            <div class="quiz">
+                <img src="./assets/img/game-1.png">
+                <h3>Quiz</h3>
+                <p>Você já se perguntou qual Sailor você seria? Descubra agora com um quiz divertido!</p>
+            </div>
+        
+            <div class="cadastro">
+                <img src="./assets/img/game-1.png">
+                <h3>Cadastre-se</h3>
+                <p>Se juntando ao Club você tem acesso às métricas
+                   personalizadas do seu quiz!</p>
+            </div>
+        </div>
 
-        <p>Sailor Moon é a Guerreira da Lua. Usagi é a reencarnação da Princesa da Lua, Selenity (Serenity, no Brasil, Serenidade em Portugal). Selene, na mitologia Grega, era a deusa da Lua, irmã de Hélios, o deus do Sol.</p>
-        <a class="saibamais_btn" href="saibamais.html">Conheça o Club</a>
     </div>
+
+    <footer>
+        <div class="footer_msg">
+            <h2>Feito com amor por um aluno SPTECH</h2>
+        </div>
+    </footer>
+    
+    
+
 
 </body>
 </html>

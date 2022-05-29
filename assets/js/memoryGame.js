@@ -12,8 +12,8 @@ let cardHTML = "";
 
 imgs.forEach(img => {
     cardHTML += `<div class="memory-card" data-card="${img}">
-    <img class="front-face" src="img/${img}"/>
-    <img class="back-face" src="img/sailor_login_im.png">
+    <img class="front-face" src="./assets/img/${img}"/>
+    <img class="back-face" src="./assets/img/sailor_login_im.png">
   </div>`;
 });
 

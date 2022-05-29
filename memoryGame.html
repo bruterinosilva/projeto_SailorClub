@@ -6,37 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Memória | Sailor Club</title>
-    <link rel="stylesheet" href="memoryGame.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./assets/css/memoryGame.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="./img/logo.png">
-        </div>
+        <a class="logo" href="index.html">
+            <img src="./assets/img/logo.png">
+        </a>
 
         <ul class="navbar">
-            <li><a class="navbar_btn agora" href="index.html">Início</a></li>
+            <li><a class="navbar_btn" href="index.html">Início</a></li>
             <li><a class="navbar_btn" href="sobre.html">Sobre</a></li>
-            <li><a class="navbar_btn" href="memoryGame.html">Jogo da Memória</a></li>
+            <li><a class="navbar_btn agora" href="memoryGame.html">Jogo da Memória</a></li>
             <li><a class="navbar_btn" href="quiz.html">Quiz</a></li>
             <li><a class="navbar_btn" href="cadastro.html">Cadastro</a></li>
-            <li><a class="navbar_btn login_btn agora_login" href="login.html">Faça seu Login!</a></li>
+            <li><a class="navbar_btn login_btn" href="login.html">Faça seu Login!</a></li>
 
         </ul>
     </header>
     
     <div class="game">
+    <div class="game_tittle">
+        <h3>Você tem boa memória?</h3>
+        <p>Vamos ver se consegue ganhar. Boa sorte guerreira!</p>
+    </div>
         <div id="cardboard"></div>
 
     </div>
+
+    
+<footer>
+    <div class="footer_msg">
+        <h2>Feito com amor por um aluno SPTECH</h2>
+    </div>
+</footer>
+
 </body>
 
 </html>
-<script src="main.js"></script>
+<script src="./assets/js/memoryGame.js"></script>
