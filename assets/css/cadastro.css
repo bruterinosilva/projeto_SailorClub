@@ -11,13 +11,12 @@ body {
     background-image: url("../img/background_site.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     position: relative;
 }
 
 h1 {
     font-size: 30px;
-    text-align:justify;
+    text-align: center;
     color:#8f85b9;
 }
 
@@ -31,15 +30,15 @@ h1 {
     margin-top: 50px;
     margin-left: 50px;
     border: 6px #d260ff56;
-    border-radius: 15px;
+    border-radius: 25px;
     
 }
 
-.img_cadastro img {
-    height: 800px;
-    margin-top: 50px;
-    margin-left: 50px;
+.img_cadastro{
+    margin-top: 100px;
+    right: 60px;
     animation: bounce infinite linear 2s;
+    position: absolute;
 }
 
 .div_cadastro {
@@ -53,7 +52,7 @@ h1 {
     height: 100px;
     width: 314px;
     margin-top: 50px;
-    margin-left: 70px;
+    margin-left: 90px;
 }
 
 form {

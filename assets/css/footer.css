@@ -7,9 +7,10 @@
 
 footer {
     background: #ffe5ad;
-    padding: 2px 0;
-    height: 80px;
-    margin-top: 30px;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .footer_msg {

@@ -69,12 +69,14 @@ function responder() {
 function results() {
     quiz.innerHTML = 
         `
-            <h2>Resultado</h2>
-            <p>Sailor Moon: ${sailor1} </p>
-            <p>Sailor Vênus: ${sailor2} </p>
-            <p>Sailor Netuno: ${sailor3} </p>
-            <p>Sailor Call: ${sailor4} </p>
-            <p>Sailor Mall: ${sailor5} </p>
+            <div class="resultsBox">
+                <h2>Resultado</h2>
+                <p>Sailor Moon: ${sailor1} </p>
+                <p>Sailor Vênus: ${sailor2} </p>
+                <p>Sailor Netuno: ${sailor3} </p>
+                <p>Sailor Call: ${sailor4} </p>
+                <p>Sailor Mall: ${sailor5} </p>
+            </div>
         
         
         `

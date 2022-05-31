@@ -17,7 +17,7 @@ body {
 
 h1 {
     font-size: 30px;
-    text-align:justify;
+    text-align: center;
     color:#8f85b9;
 }
 
@@ -28,18 +28,25 @@ h1 {
     height: 400px;
     margin: 0 auto;
     justify-content: flex-start;
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: 140px;
+    /* margin-left: 100px; */
     border: 6px #d260ff56;
-    border-radius: 15px;
+    border-radius: 25px;
+    margin-right: 10%;
+    margin-bottom: 140px;
     
 }
 
 .img_login img {
-    height: 683px;
+    height: 610px;
     padding: 0 0px;
-    margin-left: 20px;
-    margin-top: 30px;
+    /* margin-left: 20px; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+    animation: bounce infinite linear 2s;
+    position: absolute;
+    
+    
 }
 
 .div_login {
@@ -52,7 +59,7 @@ h1 {
     height: 60px;
     width: 314px;
     margin-top: 50px;
-    margin-left: 74px;
+    margin-left: 70px;
 }
 
 form {
@@ -95,4 +102,18 @@ form button {
 button:hover {
     transform: translateY(-10px);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+@keyframes bounce {
+    0% {
+        top: 30px
+    }
+
+    50% {
+        top: 50px
+    }
+
+    100% {
+        top: 30px
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a class="logo" href="index.html">
@@ -29,71 +31,85 @@
 
         </ul>
     </header>
-    <div class="image">
-        <img src="./assets/img/quiz_img.png">
-</div>
-    <button id="startQuiz" class="quiz_box_btn" onclick="startQuiz()">Iniciar</button>
+    <img class="bgImage" src="./assets/img/quiz_img.png">
+    <img src="" alt="">
+    <button id="startQuiz" class="quiz_box_btn" onclick="startQuiz()">Clique aqui e descubra qual Sailor você seria!</button>
     <section id="quiz" class="quiz">
         <!-- <img src="#" id="perguntaImg" class="quiz_img"> -->
 
 
-        
+
         <div id="pergunta1" class="pergunta">
-            <h2 class="pergunta_title">texto pergunta 1</h2>
-    
+            <h2 class="pergunta_title">Qual sua comida preferida?</h2>
+            <img class="pergunta_img" src="./assets/img/sailor_eat.jpg">
             <div class="pergunta_box">
-                <button class="pergunta_box_btn" onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor1()">Sushi</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor2()">Churrasco</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor3()">Pizza</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor4()">Hamburguer</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor5()">Sorvete</button><br>
             </div>
         </div>
 
-        
+
         <div id="pergunta2" class="pergunta">
             <h2 class="pergunta_title">texto pergunta 2</h2>
-    
+
             <div class="pergunta_box">
-                <button class="pergunta_box_btn" onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
             </div>
         </div>
 
-        
+
         <div id="pergunta3" class="pergunta">
             <h2 class="pergunta_title">texto pergunta 3</h2>
-    
+
             <div class="pergunta_box">
-                <button class="pergunta_box_btn" onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
             </div>
         </div>
 
-        
+
         <div id="pergunta4" class="pergunta">
             <h2 class="pergunta_title">texto pergunta 4</h2>
-    
+
             <div class="pergunta_box">
-                <button class="pergunta_box_btn" onclick="responder()">${perguntas[0].pergunta[contador].resp1}</button><br>
-                <button class="pergunta_box_btn" onclick="responder()">${perguntas[0].pergunta[contador].resp2}</button><br>
-                <button class="pergunta_box_btn" onclick="responder()">${perguntas[0].pergunta[contador].resp3}</button><br>
-                <button class="pergunta_box_btn" onclick="responder()">${perguntas[0].pergunta[contador].resp4}</button><br>
-                <button class="pergunta_box_btn" onclick="responder()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="responder()">${perguntas[0].pergunta[contador].resp1}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="responder()">${perguntas[0].pergunta[contador].resp2}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="responder()">${perguntas[0].pergunta[contador].resp3}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="responder()">${perguntas[0].pergunta[contador].resp4}</button><br>
+                <button class="pergunta_box_btn"
+                    onclick="responder()">${perguntas[0].pergunta[contador].resp5}</button><br>
             </div>
         </div>
 
-        
+
 
         <!-- <button class="quiz_btn" onclick="exibir()">proximo</button> -->
 
-        
+
     </section>
 
     <footer>
@@ -103,5 +119,6 @@
     </footer>
 
 </body>
+
 </html>
 <script src="./assets/js/quiz.js"></script>

@@ -11,7 +11,6 @@ body {
     background-image: url("../img/background_site.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     position: relative;
 }
 
@@ -68,6 +67,7 @@ body {
     margin-left: 240px;
     /* border: 6px solid #d260ff56; */
     border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 .game_tittle {
