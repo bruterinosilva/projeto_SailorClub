@@ -16,10 +16,13 @@ body {
 .bgImage {
     position: absolute;
     bottom: 80px;
-    height: 500px;
+    height: 400px;
+    margin-top: 150px;
 }
 
 .quiz {
+    /* height: 100vh; */
+    /* margin-top: 150px; */
     height: 100vh;
 }
 
@@ -41,6 +44,7 @@ body {
     left: 0;
     right: 0;
     text-align: center;
+    
 }
 
 
@@ -55,7 +59,7 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 150px;
     font-size: 30px;
 }
 

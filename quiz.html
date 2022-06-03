@@ -23,7 +23,7 @@
 
         <ul class="navbar">
             <li><a class="navbar_btn" href="index.html">Início</a></li>
-            <li><a class="navbar_btn" href="sobre.html">Sobre</a></li>
+            <li><a class="navbar_btn" href="sobre.html">Sobre mim</a></li>
             <li><a class="navbar_btn" href="memoryGame.html">Jogo da Memória</a></li>
             <li><a class="navbar_btn agora" href="quiz.html">Quiz</a></li>
             <li><a class="navbar_btn" href="cadastro.html">Cadastro</a></li>
@@ -32,7 +32,6 @@
         </ul>
     </header>
     <img class="bgImage" src="./assets/img/quiz_img.png">
-    <img src="" alt="">
     <button id="startQuiz" class="quiz_box_btn" onclick="startQuiz()">Clique aqui e descubra qual Sailor você seria!</button>
     <section id="quiz" class="quiz">
         <!-- <img src="#" id="perguntaImg" class="quiz_img"> -->
@@ -40,68 +39,63 @@
 
 
         <div id="pergunta1" class="pergunta">
-            <h2 class="pergunta_title">Qual sua comida preferida?</h2>
-            <img class="pergunta_img" src="./assets/img/sailor_eat.jpg">
+            <h2 class="pergunta_title">Escolha uma das opções abaixo:</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
             <div class="pergunta_box">
-                <button class="pergunta_box_btn" onclick="addSailor1()">Sushi</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor2()">Churrasco</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor3()">Pizza</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor4()">Hamburguer</button><br>
-                <button class="pergunta_box_btn" onclick="addSailor5()">Sorvete</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor1()">Lua</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor2()">Agua</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor3()">Fogo</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor4()">Terra</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor5()">Ar</button><br>
             </div>
         </div>
 
 
         <div id="pergunta2" class="pergunta">
-            <h2 class="pergunta_title">texto pergunta 2</h2>
-
+            <h2 class="pergunta_title">Você se considera uma pessoa mais:</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
             <div class="pergunta_box">
-                <button class="pergunta_box_btn"
-                    onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
-                <button class="pergunta_box_btn"
-                    onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
-                <button class="pergunta_box_btn"
-                    onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
-                <button class="pergunta_box_btn"
-                    onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
-                <button class="pergunta_box_btn"
-                    onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor1()">Desastrada</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor2()">Inteligente</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor3()">Madura</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor4()">Destemida</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor5()">Simpática</button><br>
             </div>
         </div>
 
 
         <div id="pergunta3" class="pergunta">
-            <h2 class="pergunta_title">texto pergunta 3</h2>
-
+            <h2 class="pergunta_title">Qual a sua cor favorita?</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
             <div class="pergunta_box">
                 <button class="pergunta_box_btn"
-                    onclick="addSailor1()">${perguntas[0].pergunta[contador].resp1}</button><br>
+                    onclick="addSailor1()">Rosa</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="addSailor2()">${perguntas[0].pergunta[contador].resp2}</button><br>
+                    onclick="addSailor2()">Azul</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="addSailor3()">${perguntas[0].pergunta[contador].resp3}</button><br>
+                    onclick="addSailor3()">Vermelho</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="addSailor4()">${perguntas[0].pergunta[contador].resp4}</button><br>
+                    onclick="addSailor4()">Verde</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="addSailor5()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                    onclick="addSailor5()">Laranja</button><br>
             </div>
         </div>
 
 
         <div id="pergunta4" class="pergunta">
-            <h2 class="pergunta_title">texto pergunta 4</h2>
-
+            <h2 class="pergunta_title">Como prefere usar o cabelo?</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
             <div class="pergunta_box">
                 <button class="pergunta_box_btn"
-                    onclick="responder()">${perguntas[0].pergunta[contador].resp1}</button><br>
+                    onclick="responder()">Rabo de cavalo duplo</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="responder()">${perguntas[0].pergunta[contador].resp2}</button><br>
+                    onclick="responder()">Curto</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="responder()">${perguntas[0].pergunta[contador].resp3}</button><br>
+                    onclick="responder()">Com franja e liso</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="responder()">${perguntas[0].pergunta[contador].resp4}</button><br>
+                    onclick="responder()">Rabo de cavalo</button><br>
                 <button class="pergunta_box_btn"
-                    onclick="responder()">${perguntas[0].pergunta[contador].resp5}</button><br>
+                    onclick="responder()">Comprido com laço</button><br>
             </div>
         </div>
 
@@ -114,7 +108,15 @@
 
     <footer>
         <div class="footer_msg">
-            <h2>Feito com amor por um aluno SPTECH</h2>
+            <div class="icons">
+                <a href="https://www.facebook.com/terinobruna/">
+                    <img src="./assets/img/facebook_icon.png">
+                </a>
+                
+                <img src="./assets/img/instagram_icon.png">
+                <img src="./assets/img/linkedin_icon.png">
+                <h2>Copyright &copy; 2022 Sailor Club & Bruna Silva. Todos os direitos reservados.</h2>
+            </div>
         </div>
     </footer>
 

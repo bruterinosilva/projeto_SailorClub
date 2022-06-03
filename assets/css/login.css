@@ -18,36 +18,36 @@ body {
 h1 {
     font-size: 30px;
     text-align: center;
-    color:#8f85b9;
+    color: #8f85b9;
 }
 
 .box_login {
     padding: 0 20px;
-    background-color: #d260ff56;
+    background: rgba(255, 164, 193, 0.623);
+    background: linear-gradient(90deg, rgba(255, 164, 193, 0.637) 1%,
+            rgba(255, 201, 220, 0.637) 29%,
+            rgba(239, 133, 136, 0.637) 84%);
     width: 450px;
     height: 400px;
     margin: 0 auto;
     justify-content: flex-start;
-    margin-top: 140px;
-    /* margin-left: 100px; */
+    margin-top: 150px;
     border: 6px #d260ff56;
-    border-radius: 25px;
+    border-radius: 60px 0 60px 0;
     margin-right: 10%;
     margin-bottom: 140px;
-    
+
 }
 
 .img_login img {
-    height: 610px;
-    padding: 0 0px;
-    /* margin-left: 20px; */
-    margin-top: 80px;
+    height: 600px;
+    padding: 0 0px 33px;
+    margin-top: 50px;
     margin-bottom: 80px;
     animation: bounce infinite linear 2s;
     position: absolute;
-    
-    
 }
+
 
 .div_login {
     display: flex;

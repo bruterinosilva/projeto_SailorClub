@@ -11,6 +11,7 @@ body {
     background-image: url("../img/background_site.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     position: relative;
 }
 
@@ -21,16 +22,21 @@ h1 {
 }
 
 .box_cadastro {
-    padding: 0 20px;
-    background-color: #d260ff56;
+    padding: 20px 20px;
+    background: rgba(255, 164, 193, 0.623);
+    background: linear-gradient(
+        90deg, rgba(255, 164, 193, 0.637) 1%, 
+    rgba(255, 201, 220, 0.637) 29%,
+    rgba(239, 133, 136, 0.637) 84%);
     width: 500px;
     height: 800px;
     margin: 0 auto;
     justify-content: flex-start;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 50px;
     border: 6px #d260ff56;
-    border-radius: 25px;
+    border-radius: 60px 0 60px;
+    margin-bottom: 140px;
     
 }
 
@@ -96,19 +102,7 @@ button:hover {
     transform: translateY(-10px);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
 }
-footer {
-    background: #ffe5ad;
-    padding: 2px 0;
-    height: 80px;
-    margin-top: 60px;
-}
 
-.footer_msg {
-    font-size: 10px;
-    text-align: center;
-    padding: 20px 20px;
-    margin-bottom: 0;
-}
 @keyframes bounce {
     0% {
         top: 30px

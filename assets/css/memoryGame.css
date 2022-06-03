@@ -22,6 +22,7 @@ body {
     flex-wrap: wrap;
     margin-top: 70px;
     cursor: pointer;
+    position: relative;
 }
 
 .memory-card {
@@ -61,12 +62,16 @@ body {
 }
 
 .game {
-    background-color: #d260ff56;
+    background: rgba(255, 164, 193, 0.623);
+    background: linear-gradient(
+        90deg, rgba(255, 164, 193, 0.637) 1%, 
+    rgba(255, 201, 220, 0.637) 29%,
+    rgba(239, 133, 136, 0.637) 84%);
     height: 750px;
     width: 852px;
     margin-left: 240px;
     /* border: 6px solid #d260ff56; */
-    border-radius: 25px;
+    border-radius: 60px 0 60px 0;
     margin-bottom: 50px;
 }
 
