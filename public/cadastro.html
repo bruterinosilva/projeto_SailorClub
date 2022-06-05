@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/cadastro.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="./js/funcoes.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,27 +41,27 @@
                 <h1>Cadastre-se aqui!</h1><br>
                 <form>
                     <label for="nomeInput">Nome: </label>
-                    <input taxlength="45" ype="text" required id="nomeInput name-mask" placeholder="seu nome completo"><br>
+                    <input maxlength="45" type="text" required id="nomeInput" placeholder="seu nome completo"><br>
                     <label for="usuarioInput">Nome de Usuário: </label>
-                    <input maxlength="45" type="text" required id="usuarioInput name-mask" placeholder="seu nickname"><br>
+                    <input maxlength="45" type="text" required id="usuarioInput" placeholder="seu nickname"><br>
                     <label for="nascimentoInput">Data de nascimento:</label>
-                    <input maxlength="11"type="date" required id="nascimentoInput date-mask" placeholder="dd/mm/aaaa"
+                    <input maxlength="11"type="date" required id="nascimentoInput" placeholder="dd/mm/aaaa"
                         data-mask="00/00/0000" maxlength="10" autocomplete="off""><br>
                     <label for=" emailInput"> E-mail: </label>
-                    <input maxlength="80" type="email" required id="emailInput email-mask" placeholder=" seuemail@dominio.com"><br>
+                    <input maxlength="80" type="email" required id="emailInput" placeholder=" seuemail@dominio.com"><br>
                     <label for="celularInput">Celular:</label>
-                    <input maxlength="11" type="cel" required id="celularInput cel-sp-mask" placeholder=" (00) 00000-0000"><br>
+                    <input maxlength="11" type="cel" required id="celularInput" placeholder=" (00) 00000-0000"><br>
                     <label for="senhaInput"> Senha: </label>
-                    <input maxlength="12" type="password" required id="senhaInput password-mask" placeholder=" ******"><br>
+                    <input maxlength="12" type="password" required id="senhaInput" placeholder=" ******"><br>
                     <label for="confirmacaoInput"> Confirme sua senha: </label>
-                    <input maxlength="12" type="password" required id="senhaInput password-mask" placeholder=" ******"><br>
+                    <input maxlength="12" type="password" required id="confirmacaoInput" placeholder=" ******"><br>
 
                     <!-- <button type="button">Cadastrar</button> -->
 
-                    <input onclick="cadastrar()" class="btn_cadastrar" type="submit" value="CADASTRAR">
+                    <button onclick="cadastrar()" class="btn_cadastrar" type="button">CADASTRAR</button>
                 </form>
                 <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif" />
+                    <!-- <img src="./assets/circle-loading.gif" id="loading-gif" /> -->
                   </div>
                   <div class="alerta_erro">
                     <div class="card_erro" id="cardErro">
@@ -104,9 +105,9 @@
         var celularVar = celularInput.value;
         var senhaVar = senhaInput.value;
 
-        var confirmacaoSenhaVar = confirmacaoInput.value;
+        var confirmacaoVar = confirmacaoInput.value;
 
-        if (nomeVar == "" || usuarioVar == "" || nascimentoVar == "" || emailVar == "" || celularVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || usuarioVar == "" || nascimentoVar == "" || emailVar == "" || celularVar == "" || senhaVar == "" || confirmacaoVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Por favor, preencha todos os campos para prosseguir";
 
@@ -125,7 +126,7 @@
             setInterval(sumirMensagem, 5000)
         }
 
-        if (senhaVar != confirmacaoSenhaVar) {
+        if (senhaVar != confirmacaoVar) {
             //cardErro.style.display = 'block'
             mensagem_erro.innerHTML =
                 'As senhas inseridas devem ser iguais para prosseguir!'
