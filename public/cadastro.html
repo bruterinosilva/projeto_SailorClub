@@ -1,149 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro | Sailor Club</title>
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
-    <title>AcquaTec | Cadastro</title>
-
-
-    <script src="./js/funcoes.js"></script>
-
-
-    <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="./assets/img/logo.png">
+        </a>
 
-    <!--header inicio-->
-    <div class="header">
-        <div class="container">
-            <h1 class="titulo">AcquaTec</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="./index.html">
-                        Inicial
-                    </a>
-                </li>
-                <li>
-                    <a href="./simulador.html">Simulador</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
-                </li>
-                <li class="agora">
-                    <a href="./cadastro.html">Cadastro</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!--header fim-->
+        <ul class="navbar">
+            <li><a class="navbar_btn" href="index.html">Início</a></li>
+            <li><a class="navbar_btn" href="sobre.html">Sobre mim</a></li>
+            <li><a class="navbar_btn" href="memoryGame.html">Jogo da Memória</a></li>
+            <li><a class="navbar_btn" href="quiz.html">Quiz</a></li>
+            <li><a class="navbar_btn agora" href="cadastro.html">Cadastro</a></li>
+            <li><a class="navbar_btn login_btn" href="login.html">Faça seu Login!</a></li>
 
+        </ul>
+    </header>
 
-    <div class="banner ">
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro"></span>
-            </div>
-        </div>
-        <div class="container tamanho-conteudo">
-            <div class="card medio">
-                <h2>Bem-vindo!</h2>
-                <div class="formulario">
+    <div class="div_cadastro">
 
-                    <!--
-                         Para inserir mais um campo, copie uma das inputs abaixo.
-                         Assim que inserir vá para o script abaixo.
-                     -->
+        <div class="box_cadastro">
+            <div class="box_inputs">
+                <h1>Cadastre-se aqui!</h1><br>
+                <form>
+                    <label for="nomeInput">Nome: </label>
+                    <input taxlength="45" ype="text" required id="nomeInput name-mask" placeholder="seu nome completo"><br>
+                    <label for="usuarioInput">Nome de Usuário: </label>
+                    <input maxlength="45" type="text" required id="usuarioInput name-mask" placeholder="seu nickname"><br>
+                    <label for="nascimentoInput">Data de nascimento:</label>
+                    <input maxlength="11"type="date" required id="nascimentoInput date-mask" placeholder="dd/mm/aaaa"
+                        data-mask="00/00/0000" maxlength="10" autocomplete="off""><br>
+                    <label for=" emailInput"> E-mail: </label>
+                    <input maxlength="80" type="email" required id="emailInput email-mask" placeholder=" seuemail@dominio.com"><br>
+                    <label for="celularInput">Celular:</label>
+                    <input maxlength="11" type="cel" required id="celularInput cel-sp-mask" placeholder=" (00) 00000-0000"><br>
+                    <label for="senhaInput"> Senha: </label>
+                    <input maxlength="12" type="password" required id="senhaInput password-mask" placeholder=" ******"><br>
+                    <label for="confirmacaoInput"> Confirme sua senha: </label>
+                    <input maxlength="12" type="password" required id="senhaInput password-mask" placeholder=" ******"><br>
 
-                    <span class="tipo_campo">Nome:</span>
-                    <input id="nome_input" type="text" placeholder="Seu nome">
+                    <!-- <button type="button">Cadastrar</button> -->
 
-                    <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="meuemail@provedor.com">
-
-                    <span class="tipo_campo">Senha:</span>
-                    <input id="senha_input" type="password" placeholder="******">
-
-                    <span class="tipo_campo">Confirmação da Senha:</span>
-                    <input id="confirmacao_senha_input" type="password" placeholder="******">
-
-                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
-
-                </div>
+                    <input onclick="cadastrar()" class="btn_cadastrar" type="submit" value="CADASTRAR">
+                </form>
                 <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
+                    <img src="./assets/circle-loading.gif" id="loading-gif" />
+                  </div>
+                  <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro">
+                      <span id="mensagem_erro"></span>
+                    </div>
+                  </div>
+            </div>
 
-                <div id="div_erros_login">
+        </div>
 
-                </div>
+        <img class="img_cadastro" src="./assets/img/cadastro_sailor.png">
+
+    </div>
+
+    <footer>
+        <div class="footer_msg">
+            <div class="icons">
+                <a href="https://www.facebook.com/terinobruna/">
+                    <img src="./assets/img/facebook_icon.png">
+                </a>
+
+                <img src="./assets/img/instagram_icon.png">
+                <img src="./assets/img/linkedin_icon.png">
+                <h2>Copyright &copy; 2022 Sailor Club & Bruna Silva. Todos os direitos reservados.</h2>
             </div>
         </div>
-    </div>
-
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
-        </div>
-    </div>
-    <!--footer fim-->
-
-
+    </footer>
 </body>
 
 </html>
-
 <script>
     function cadastrar() {
         aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
-        var nomeVar = nome_input.value;
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
-        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var nomeVar = nomeInput.value;
+        var usuarioVar = usuarioInput.value;
+        var nascimentoVar = nascimentoInput.value;
+        var emailVar = emailInput.value;
+        var celularVar = celularInput.value;
+        var senhaVar = senhaInput.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        var confirmacaoSenhaVar = confirmacaoInput.value;
+
+        if (nomeVar == "" || usuarioVar == "" || nascimentoVar == "" || emailVar == "" || celularVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
+            mensagem_erro.innerHTML = "Por favor, preencha todos os campos para prosseguir";
 
             finalizarAguardar();
             return false;
-        }
-        else {
+        } else {
             setInterval(sumirMensagem, 5000)
         }
-
-        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "Ops, e-mail inválido! Verifique e tente novamente.";
-            finalizarAguardar();
-            return false;
-        }
-        else {
+        if (emailVar.indexOf('@') == -1 || emailVar.indexOf('.com') == -1) {
+            //cardErro.style.display = 'block'
+            mensagem_erro.innerHTML =
+                'Ops, e-mail inválido! Verifique e tente novamente.'
+            finalizarAguardar()
+            return false
+        } else {
             setInterval(sumirMensagem, 5000)
         }
 
         if (senhaVar != confirmacaoSenhaVar) {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "As senhas inseridas devem ser iguais para prosseguir!";
-            finalizarAguardar();
-            return false;
-        }
-        else {
+            //cardErro.style.display = 'block'
+            mensagem_erro.innerHTML =
+                'As senhas inseridas devem ser iguais para prosseguir!'
+            finalizarAguardar()
+            return false
+        } else {
             setInterval(sumirMensagem, 5000)
         }
+
 
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -155,17 +146,25 @@
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
+                usuarioServer: usuarioVar,
+                nascimentoServer: nascimentoVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                celularServer: celularVar,
+                senhaServer: senhaVar,
             })
         }).then(function (resposta) {
 
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                cardErro.style.display = "block"
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso!";
-                window.location = "login.html";
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+
                 limparFormulario();
                 finalizarAguardar();
             } else {
@@ -178,6 +177,21 @@
 
         return false;
     }
+
+    function aguardar() {
+    var divAguardar = document.getElementById('div_aguardar')
+    divAguardar.style.display = 'flex'
+  }
+
+  function finalizarAguardar(texto) {
+    var divAguardar = document.getElementById('div_aguardar')
+    divAguardar.style.display = 'none'
+
+    var divErrosLogin = document.getElementById('div_erros_login')
+    if (texto) {
+      divErrosLogin.innerHTML = texto
+    }
+  }
 
     function sumirMensagem() {
         cardErro.style.display = "none"

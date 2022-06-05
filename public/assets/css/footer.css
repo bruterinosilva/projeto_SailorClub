@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0; 
+    outline: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+footer {
+    background: #ff2e51;
+    padding: 1px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+.footer_msg {
+    font-size: 9px;
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.icons {
+    padding: 0px 0px;
+}

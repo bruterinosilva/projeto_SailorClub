@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0; 
+    outline: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+.banner {
+    width: 100%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 80px;
+    border-bottom: 4px groove#ffa4c1;
+}
+
+.box_index {
+    background: #d260ff56;
+    width: 800px;
+    border: 6px #d260ff56;
+    border-radius: 15px;
+}
+
+.saibamais_btn {
+    background-color: #8f85b9;
+    width: 500px;
+    border: #8f85b9 solid 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 430px;
+    color: white;
+    padding: 4px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    animation: bounce infinite linear 3s;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.saibamais_btn:hover {
+    transform: translateZ(-10px);
+    box-shadow: 0px 5px 5px 0px #8f85b9;
+    background: #ff2e51;
+    border: #ff2e51 solid 10px;
+    border-radius: 25px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFDCE7;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        top: 20px
+    }
+
+    50% {
+        top: 40px
+    }
+
+    100% {
+        top: 20px
+    }
+}
+
+#banner2 {
+    display: flex;
+    background-image: url("../img/background_site.png");
+    width: 100%;
+}
+
+.tema {
+    display: flex;
+    padding: 50px 50px;
+}
+
+.logo_sailor {
+    display: flex;
+    height: 115px;
+    position: absolute;
+    padding: 15px 105px;
+}
+
+.sailor_perfil {
+    height: 600px;
+    animation: bounce infinite linear 2s;
+    position: relative;
+}
+
+.box_textoIndex {
+    background: rgba(255, 164, 193, 0.623);
+    background: linear-gradient(
+        90deg, rgba(255, 164, 193, 0.637) 1%, 
+    rgba(255, 201, 220, 0.637) 29%,
+    rgba(239, 133, 136, 0.637) 84%);
+    display: flex;
+    padding: 0px 30px;
+    border-radius: 60px 0px 60px 0px;
+    position: relative;
+    
+}
+
+.box_textoIndex h3 {
+    padding: 60px 42px;
+    /* text-align: right; */
+    font-size: 40px;
+    position: absolute;
+    color: #8f85b9;
+    font-weight: lighter;
+}
+
+.box_textoIndex p {
+    font-size: 19px;
+    padding: 150px 45px 75px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+#banner3 {
+    display: flex;
+    background-image: url("../img/background_site.png");
+    width: 100%;
+}
+
+.funcoes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0px 90px;
+}
+
+.cards {
+    display: flex;
+    padding: 0 20px;
+    background: rgba(255, 164, 193, 0.623);
+    background: linear-gradient(
+        90deg, rgba(255, 164, 193, 0.637) 1%, 
+    rgba(255, 201, 220, 0.637) 29%,
+    rgba(239, 133, 136, 0.637) 84%);
+    border-radius: 60px 0px 60px 0px;
+    height: 500px;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards img {
+    height: 200px;
+    padding: 20px 0px;
+}  
+    
+.cards h3 {
+    font-size: 30px;
+    color: #8f85b9;
+    font-weight: lighter;
+    padding: 20px 20px;
+}
+
+.cards p {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    padding: 10px 20px;
+    width: 264px;
+    text-align: center;
+}
+
+.cards:hover {
+    box-shadow: 0px 10px 10px 0px #ff2e51;
+    border-radius: 60px;
+}
+

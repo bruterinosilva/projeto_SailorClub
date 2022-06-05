@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background_site.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #8f85b9;
+}
+
+.box_login {
+    padding: 0 20px;
+    background: rgba(255, 164, 193, 0.623);
+    background: linear-gradient(90deg, rgba(255, 164, 193, 0.637) 1%,
+            rgba(255, 201, 220, 0.637) 29%,
+            rgba(239, 133, 136, 0.637) 84%);
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    margin-top: 150px;
+    border: 6px #d260ff56;
+    border-radius: 60px 0 60px 0;
+    margin-right: 10%;
+    margin-bottom: 140px;
+
+}
+
+.img_login img {
+    height: 600px;
+    padding: 0 0px 33px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    animation: bounce infinite linear 2s;
+    position: absolute;
+}
+
+
+.div_login {
+    display: flex;
+    margin-left: 6px;
+}
+
+.box_inputs {
+    color: #8f85b9;
+    height: 60px;
+    width: 314px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 314px;
+}
+
+form label {
+    margin-top: 3px;
+}
+
+form input {
+    margin-top: 2px;
+    outline: none;
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid #ffc9dc36;
+    justify-content: space-between;
+}
+
+.btn_entrar {
+    margin-top: 16px;
+    background-color: #ff2e51;
+    color: white;
+    padding: 15px 15px 35px;
+    width: 400px;
+    align-self: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.btn_entrar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+@keyframes bounce {
+    0% {
+        top: 30px
+    }
+
+    50% {
+        top: 50px
+    }
+
+    100% {
+        top: 30px
+    }
+}

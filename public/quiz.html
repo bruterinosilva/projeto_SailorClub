@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Sailor Club </title>
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https:cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="./assets/img/logo.png">
+        </a>
+
+        <ul class="navbar">
+            <li><a class="navbar_btn" href="index.html">Início</a></li>
+            <li><a class="navbar_btn" href="sobre.html">Sobre mim</a></li>
+            <li><a class="navbar_btn" href="memoryGame.html">Jogo da Memória</a></li>
+            <li><a class="navbar_btn agora" href="quiz.html">Quiz</a></li>
+            <li><a class="navbar_btn" href="cadastro.html">Cadastro</a></li>
+            <li><a class="navbar_btn login_btn" href="login.html">Faça seu Login!</a></li>
+
+        </ul>
+    </header>
+        <img class="bgImage" src="./assets/img/quiz_img.png">
+        <div id="initQuiz">
+           <h2>Você já imaginou qual personagem de Sailor Moon você seria? Faça o teste abaixo e descubra agora!</h2>
+           <button id="startQuiz" class="quiz_box_btn" onclick="startQuiz()">Iniciar</button>
+        </div>
+        <section id="quiz" class="quiz">
+        
+    <!-- <img src="#" id="perguntaImg" class="quiz_img"> -->
+    
+
+
+        <div id="pergunta1" class="pergunta">
+            <h2 class="pergunta_title">Escolha uma das opções abaixo:</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
+            <div class="pergunta_box">
+                <button class="pergunta_box_btn" onclick="addSailor1()">Lua</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor2()">Agua</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor3()">Fogo</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor4()">Terra</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor5()">Ar</button><br>
+            </div>
+        </div>
+
+
+        <div id="pergunta2" class="pergunta">
+            <h2 class="pergunta_title">Você se considera uma pessoa mais:</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
+            <div class="pergunta_box">
+                <button class="pergunta_box_btn" onclick="addSailor1()">Desastrada</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor2()">Inteligente</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor3()">Madura</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor4()">Destemida</button><br>
+                <button class="pergunta_box_btn" onclick="addSailor5()">Simpática</button><br>
+            </div>
+        </div>
+
+
+        <div id="pergunta3" class="pergunta">
+            <h2 class="pergunta_title">Qual a sua cor favorita?</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
+            <div class="pergunta_box">
+                <button class="pergunta_box_btn"onclick="addSailor1()">Rosa</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor2()">Azul</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor3()">Vermelho</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor4()">Verde</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor5()">Laranja</button><br>
+            </div>
+        </div>
+
+
+        <div id="pergunta4" class="pergunta">
+            <h2 class="pergunta_title">Como prefere usar o cabelo?</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
+            <div class="pergunta_box">
+                <button class="pergunta_box_btn"onclick="addSailor1()">Rabo de cavalo duplo</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor2()">Curto</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor3()">Com franja e liso</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor4()">Rabo de cavalo</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor5()">Comprido com laço</button><br>
+            </div>
+        </div>
+
+        <div id="pergunta5" class="pergunta">
+            <h2 class="pergunta_title">Qual das opções abaixo mais te representa?</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
+            <div class="pergunta_box">
+                <button class="pergunta_box_btn"onclick="addSailor1()">Lutar pela justiça</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor2()">Sensibilidade com o próximo</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor3()">A sua fé</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor4()">A lealdade</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor5()">O amor</button><br>
+            </div>
+        </div>
+
+        <div id="pergunta6" class="pergunta">
+            <h2 class="pergunta_title">O que você mais gosta de fazer no seu tempo livre?</h2>
+            <img class="pergunta_img" src="./assets/img/quiz_inicio.jpg">
+            <div class="pergunta_box">
+                <button class="pergunta_box_btn"onclick="addSailor1()">Dormir</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor2()">Estudar</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor3()">Meditar</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor4()">Ler livros</button><br>
+                <button class="pergunta_box_btn"onclick="addSailor5()">Passear</button><br>
+            </div>
+        </div>
+    </section>
+    <div id="grafico" class="grafico inactive">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <footer>
+        <div class="footer_msg">
+            <div class="icons">
+                <a href="https://www.facebook.com/terinobruna/">
+                    <img src="./assets/img/facebook_icon.png">
+                </a>
+                
+                <img src="./assets/img/instagram_icon.png">
+                <img src="./assets/img/linkedin_icon.png">
+                <h2>Copyright &copy; 2022 Sailor Club & Bruna Silva. Todos os direitos reservados.</h2>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="./assets/js/quiz.js"></script>
+
+<script>
+
+    
+</script>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Sailor Club </title>
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="medkit-outline"></ion-icon>
+            </span>
+            <span class="title">Bem-vindo!</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="title">DashBoard</span>
+          </a>
+        </li>
+
+        <!-- <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="bar-chart-outline"></ion-icon
+              ></span>
+              <span class="title">Gráfico</span>
+            </a>
+          </li> -->
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </span>
+            <span class="title">Mensagem</span>
+          </a>
+        </li>
+        <li>
+          <a href="../login.html">
+            <span class="icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
+            <span class="title">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Principal-->
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+
+        <!-- Search
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search here" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>-->
+
+        <div class="search">
+          <div class="title">
+            <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+          </div>
+        </div>
+
+        <!-- UserImage-->
+        <div class="user">
+          <ion-icon class="icone" name="person-circle-outline"></ion-icon>
+        </div>
+      </div>
+
+      <!--KPis-->
+      <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">-22,5°C</div>
+            <div class="cardName">Crítico frio</div>
+          </div>
+          <div class="iconbx">
+            <ion-icon name="thermometer-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">-21,5°C</div>
+            <div class="cardName">Alerta frio</div>
+          </div>
+          <div class="iconbx">
+            <ion-icon name="thermometer-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">-20°C</div>
+            <div class="cardName">Ideal</div>
+          </div>
+          <div class="iconbx">
+            <ion-icon name="thermometer-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">-18,5°C</div>
+            <div class="cardName">Alerta quente</div>
+          </div>
+          <div class="iconbx">
+            <ion-icon name="thermometer-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">-17,5°C</div>
+            <div class="cardName">Crítico quente</div>
+          </div>
+          <div class="iconbx">
+            <ion-icon name="thermometer-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <!-- Tela de detalhes-->
+        <div class="ordersTemp">
+          <div class="cardHeader">
+            <h2>Caminhões Ativos</h2>
+            <a href="#" class="btn">Ver tudo</a>
+          </div>

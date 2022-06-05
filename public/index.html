@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AcquaTec | Página Inicial</title>
-
-    <script src="./js/funcoes.js"></script>
-
-    <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"> -->
-</head>
+    <title>Home | Sailor Club</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
 <body>
-    <div class="header">
-        <div class="container">
-            <h1 class="titulo">AcquaTec</h1>
-            <ul class="navbar">
-                <li class="agora">Inicial</li>
-                <li>
-                    <a href="./simulador.html">Simulador</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
-                </li>
-                <li>
-                    <a href="./cadastro.html">Cadastro</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="./assets/img/logo.png">
+        </a>
+
+        <ul class="navbar">
+            <li><a class="navbar_btn agora" href="index.html">Início</a></li>
+            <li><a class="navbar_btn" href="sobre.html">Sobre mim</a></li>
+            <li><a class="navbar_btn" href="memoryGame.html">Jogo da Memória</a></li>
+            <li><a class="navbar_btn" href="quiz.html">Quiz</a></li>
+            <li><a class="navbar_btn" href="cadastro.html">Cadastro</a></li>
+            <li><a class="navbar_btn login_btn agora_login" href="login.html">Faça seu Login!</a></li>
+
+        </ul>
+    </header>
 
     <div class="banner">
-        <div class="container">
-            <p>
-                Preservando <span>hoje</span> para existirem <span>amanhã</span>.
-            </p>
+        <div class="imagem">
+            <img src="./assets/img/f7c3ea.png">
         </div>
+        <a class="saibamais_btn" href="#banner2">Conheça o Club</a>
     </div>
 
-    <div class="social">
-        <div class="container">
-            <div class="boxes">
-                <div class="box">
-                    <img src="./assets/imgs/planet-earth_color.png" alt="icone da missão">
-                    <h4>Missão</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div id="banner2">
+        <div class="tema">
+            <div class="box_textoIndex">
+                <img class="logo_sailor" src="./assets/img/logo_anime.png">
+                <p>Sailor Moon é o nome civil de Usagi Tsukino que é uma heroína criada por Naoko Takeuchi e teve o mangá lançado, no Japão, em 1991. Ela é uma estudante do ensino médio de 14 anos, descobre por meio de uma gata falante chamada Luna que é uma guerreira mágica,
+                    com habilidades especiais. <br><br> Usagi então se transforma em Sailor Moon e, junto com suas amigas também superpoderosas, está destinada a proteger a Terra das forças do mal. 
+                    Essas personagens frequentam a escola e passam pelas dificuldades normais de uma adolescente, principalmente a personagem principal. Seus uniformes escolares são típicos das escolas japonesas,
+                    ou seja, tem o estilo de marinheiro. <br><br> Ao mesmo tempo que a história tem formato de super sentai, essas heroínas de Sailor Moon não utilizam um capacete para esconder suas faces, mas mesmo mostrando seus rostos ninguém as reconhecem, assim como em Clark Kent e Superman, o disfarce é muito sutil.</p>
                 </div>
+                <img class="sailor_perfil" src="./assets/img/index_img.png">
 
-                <div class="box">
-                    <img src="./assets/imgs/lightbulb_color.png" alt="icone da visão">
-                    <h4>Visão</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="box">
-                    <img src="./assets/imgs/growth_color.png" alt="icone dos valores">
-                    <h4>Valores</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+            </div>
+    </div>
+    <div id="banner3">
+        <div class="funcoes">
+            <div class="cards">
+                <img src="./assets/img/game-1.png">
+                <h3>Jogo da memória</h3>
+                <p>Uma guerreira precisa de uma boa memória,
+                    que tal treinar a sua com um jogo super fofo?</p>
+            </div>
+        
+            <div class="cards">
+                <img src="./assets/img/game-2.png">
+                <h3>Quiz</h3>
+                <p>Você já se perguntou qual Sailor você seria? Descubra agora com um quiz divertido!</p>
+            </div>
+        
+            <div class="cards">
+                <img src="./assets/img/game-1.png">
+                <h3>Cadastre-se</h3>
+                <p>Se juntando ao Club você tem acesso aos gráficos personalizados do quiz.</p>
             </div>
         </div>
 
-
     </div>
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
+    <footer>
+        <div class="footer_msg">
+            <div class="icons">
+                <a href="https://www.facebook.com/terinobruna/">
+                    <img src="./assets/img/facebook_icon.png">
+                </a>
+                
+                <img src="./assets/img/instagram_icon.png">
+                <img src="./assets/img/linkedin_icon.png">
+                <h2>Copyright &copy; 2022 Sailor Club & Bruna Silva. Todos os direitos reservados.</h2>
+            </div>
         </div>
-    </div>
-    <!--footer fim-->
+    </footer>
+    
 </body>
-
 </html>
